@@ -24,15 +24,15 @@ INSERT INTO pedidos (id, fecha, id_cliente, cantidad, total, id_preparador, id_r
 (null, '2022-012-27', 5, 3, 703000, 4, 1),
 (null, '2023-04-03', 1, 1, 150000, 5, 2);
 
-INSERT INTO productos (id, descripcion, precio) VALUES
-(null, 'Celular iPhone 14 Pro Max 256 GB', 400000),
-(null, 'Celular iPhone 13 Pro 256 GB', 330000),
-(null, 'Celular IPhone 12 128 GB', 220000),
-(null, 'Celular Samsung Galaxy S23 Ultra 256 GB', 390000),
-(null, 'Celular Samsung Galaxy Z Fold4 512 GB', 223000),
-(null, 'Celular Samsung Galaxy A54 5G 128 GB', 150000),
-(null, 'Cable USB Tipo C 1,5mts', 500),
-(null, 'Cable USB Micro USB 2mts', 700);
+INSERT INTO productos (id, descripcion, precio_compra, precio_final) VALUES
+(null, 'Celular iPhone 14 Pro Max 256 GB', 330579, precio_final(precio_compra)),
+(null, 'Celular iPhone 13 Pro 256 GB', 272728, precio_final(precio_compra)),
+(null, 'Celular IPhone 12 128 GB', 181818, precio_final(precio_compra)),
+(null, 'Celular Samsung Galaxy S23 Ultra 256 GB', 322314, precio_final(precio_compra)),
+(null, 'Celular Samsung Galaxy Z Fold4 512 GB', 184298, precio_final(precio_compra)),
+(null, 'Celular Samsung Galaxy A54 5G 128 GB', 123967, precio_final(precio_compra)),
+(null, 'Cable USB Tipo C 1,5mts', 413, precio_final(precio_compra)),
+(null, 'Cable USB Micro USB 2mts', 579, precio_final(precio_compra));
 
 INSERT INTO proveedores (id, nombre, apellido) VALUES
 (null, 'Samsung', null),

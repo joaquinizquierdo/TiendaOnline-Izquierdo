@@ -51,7 +51,8 @@ CREATE TABLE IF NOT EXISTS proyecto_izquierdo.pedidos (
 CREATE TABLE IF NOT EXISTS proyecto_izquierdo.productos (
 	id INT AUTO_INCREMENT
 	, descripcion VARCHAR(50)
-    , precio INT
+    , precio_compra INT
+    , precio_final INT
     , PRIMARY KEY (id)
 );
 
